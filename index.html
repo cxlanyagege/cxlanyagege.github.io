@@ -1,21 +1,196 @@
-<!DOCTYPE html>
-<html lang="">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/assets/Senstride%20Icon-PYXpSPAY.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <title>Senstride</title>
-    <link rel="stylesheet" href="//unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="//unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="//unpkg.com/vue-leaflet"></script>
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-CUEhNvVE.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CHrZmn77.css">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f3f5f6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#111518" media="(prefers-color-scheme: dark)">
+    <meta
+      name="description"
+      content="Shen He builds software across systems, firmware, artificial intelligence, and the boundary between software and hardware."
+    >
+    <meta property="og:title" content="Shen He — Developer">
+    <meta
+      property="og:description"
+      content="Software built out of curiosity, from low-level systems to artificial intelligence."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cxlanyagege.github.io/">
+    <meta property="og:image" content="https://cxlanyagege.github.io/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Shen He — I build software out of curiosity.">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://cxlanyagege.github.io/">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Shen He — Developer</title>
   </head>
   <body>
-    <div id="app"></div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="wordmark" href="#top" aria-label="Shen He, home">Shen He</a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="/senstride/">Senstride <span aria-hidden="true">↗</span></a>
+          <a
+            href="https://github.com/cxlanyagege"
+            target="_blank"
+            rel="me noreferrer"
+            aria-label="GitHub profile (opens in a new tab)"
+          >GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="section-label">00 / Home</p>
+            <h1 id="hero-title">Hi, I'm Shen He.</h1>
+            <p class="hero-statement">I build software out of curiosity.</p>
+            <p class="hero-detail">
+              Interested in systems, firmware, artificial intelligence,<br class="wide-break">
+              and the boundary between software and hardware.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button button-primary" href="#projects">View Projects</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/cxlanyagege"
+                target="_blank"
+                rel="me noreferrer"
+                aria-label="GitHub profile (opens in a new tab)"
+              >GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <aside class="focus-panel" aria-label="Areas of interest">
+            <p class="focus-heading">Areas of interest</p>
+            <ol class="focus-list">
+              <li><span>01</span> Systems</li>
+              <li><span>02</span> Firmware</li>
+              <li><span>03</span> Artificial intelligence</li>
+              <li><span>04</span> Software ↔ hardware</li>
+            </ol>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section now-section" aria-labelledby="now-title">
+        <div class="shell section-grid">
+          <div class="section-heading">
+            <p class="section-label">01 / Now</p>
+            <h2 id="now-title">Now</h2>
+          </div>
+          <div class="section-copy now-copy">
+            <p>
+              Currently building a desktop music player and instrument analysis tool
+              with React, TypeScript, Tauri, and Rust.
+            </p>
+            <p>
+              Also exploring large language models, spatial computing,
+              operating systems, and low-level system design.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="shell">
+          <div class="section-intro">
+            <div class="section-heading">
+              <p class="section-label">02 / Work</p>
+              <h2 id="projects-title">Selected Projects</h2>
+            </div>
+            <p class="section-note">A few things I’m building and exploring.</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-card-featured">
+              <div class="project-card-topline">
+                <span class="project-number" aria-hidden="true">01</span>
+                <span class="status"><span class="status-dot" aria-hidden="true"></span>Current project</span>
+              </div>
+              <div class="project-card-body">
+                <h3>Music Player &amp; Instrument Analysis</h3>
+                <p>
+                  A desktop application for music playback, audio analysis,
+                  and instrument recognition.
+                </p>
+              </div>
+              <p class="project-stack">React · TypeScript · Tauri · Rust</p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-topline">
+                <span class="project-number" aria-hidden="true">02</span>
+              </div>
+              <div class="project-card-body">
+                <h3>HIDDEN</h3>
+                <p>
+                  HIDDEN
+                </p>
+              </div>
+              <p class="project-stack">HIDDEN</p>
+            </article>
+
+            <article class="project-card project-card-wide">
+              <div class="project-card-topline">
+                <span class="project-number" aria-hidden="true">03</span>
+              </div>
+              <div class="project-wide-layout">
+                <div class="project-card-body">
+                  <h3>Senstride</h3>
+                  <p>A university project preserved in its original form.</p>
+                  <p class="project-stack">University project · Completed</p>
+                </div>
+                <a class="project-link" href="/senstride/">
+                  View original website <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="shell section-grid">
+          <div class="section-heading">
+            <p class="section-label">03 / About</p>
+            <h2 id="about-title">About</h2>
+          </div>
+          <div class="section-copy about-copy">
+            <p>
+              I enjoy understanding how things work beneath the interface—from
+              operating systems and firmware to machine learning systems.
+            </p>
+            <p>
+              I prefer software that has a clear reason to exist, a simple structure,
+              and respect for the people who use it.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div class="footer-links" aria-label="Contact links">
+          <a
+            href="https://github.com/cxlanyagege"
+            target="_blank"
+            rel="me noreferrer"
+            aria-label="GitHub profile (opens in a new tab)"
+          >GitHub</a>
+          <a href="mailto:cxlanyagege@hotmail.com">Email</a>
+        </div>
+        <p>© 2026 Shen He</p>
+      </div>
+    </footer>
   </body>
 </html>
